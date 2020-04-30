@@ -53,8 +53,33 @@
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px #999;
+  z-index: 10;
+  text-decoration: none !important;
 }
 
 .my-float {
-  margin-top: 22px;
+  /* margin-top: 22px; */
+  text-decoration: none !important;
 }
+
+.floating-plus-button {
+  border: none;
+  color: white;
+  /* padding: 15px 30px; */
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 40px;
+  border-radius: 100%;
+  /* float: right;  */
+  /* position: absolute;
+  bottom:0; 
+  right:0; */
+}
+
+/* .foating-plus-button a:hover {
+  text-decoration: none !important;
+}
+
+.my-float a:hover {
+  text-decoration: none !important;
+} */

@@ -18,6 +18,7 @@ import { SharedServiceModule } from '../shared-service/shared-service.module';
 import { CoursesComponent } from './courses/courses.component';
 import { GroupsComponent } from './groups/groups.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,9 +37,15 @@ import { GroupsComponent } from './groups/groups.component';
     BrowserAnimationsModule,
     MaterialDesignModule,
     SharedServiceModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [
+    
+  ],
+  providers: [  ],
+  bootstrap: [AppComponent],
+  exports: [
+    
+  ]
 })
 export class AppModule { }

@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
 import { HttpService } from '../../shared-service/http.service';
+
+
 
 export interface IBike {
   id?: number;
@@ -12,11 +14,15 @@ export interface IBike {
   description: string;
 }
 
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
+
+
+
 export class CartComponent implements OnInit {
 
   bikes: Array<IBike> = [];
@@ -84,4 +90,8 @@ export class CartComponent implements OnInit {
       this.toastService.showToast('danger', 3000, 'Delete car failed!');
     }
   }
+
+
 }
+
+
