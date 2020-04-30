@@ -26,3 +26,11 @@
 .brand {
   height: 65px;
 }
+
+.mat-toolbar {
+  background: #95e7a0;
+}
+
+.drop-shadow {
+  text-shadow: 2px 2px 3px #000;
+}

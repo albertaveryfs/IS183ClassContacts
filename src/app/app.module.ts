@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ToastModule } from './toast/toast.module';
 import { LoginComponent } from './login/login.component';
@@ -14,6 +15,8 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { SharedServiceModule } from '../shared-service/shared-service.module';
+import { CoursesComponent } from './courses/courses.component';
+import { GroupsComponent } from './groups/groups.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { SharedServiceModule } from '../shared-service/shared-service.module';
     LoginComponent,
     MainNavComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    CoursesComponent,
+    GroupsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { SharedServiceModule } from '../shared-service/shared-service.module';
     AppRoutes,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    SharedServiceModule
+    SharedServiceModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
