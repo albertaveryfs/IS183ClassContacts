@@ -5,7 +5,6 @@ import { ToastService } from '../toast/toast.service';
 import { HttpService } from '../../shared-service/http.service';
 
 
-
 export interface IBike {
   id?: number;
   image: string;
@@ -25,6 +24,7 @@ export interface IBike {
 
 export class CartComponent implements OnInit {
 
+  editMode: boolean = false;
   bikes: Array<IBike> = [];
   myName = '';
   students = [];
@@ -90,7 +90,13 @@ export class CartComponent implements OnInit {
       this.toastService.showToast('danger', 3000, 'Delete car failed!');
     }
   }
+  editStudent() {
+    this.editMode = true;
+  }
 
+  stopEditStudent() {
+    this.editMode = false;
+  }
 
 }
 
