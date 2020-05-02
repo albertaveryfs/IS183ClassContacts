@@ -7,6 +7,8 @@
 .nav-action-container {
   padding:0 5%;
 }
+
+/* unused */
 .contact-grid {
   display: grid;
   margin: 20px auto;
@@ -16,7 +18,50 @@
   overflow: auto;
 }
 
+.bold {
+  font-weight: bold;
+}
 
+.contact-block {
+  display: list-item;
+  margin: 20px auto;
+  width: 90%;
+  height: 80vh;
+  max-height: 80vh;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.gallery-block {
+  display: list-item;
+  margin-bottom: 50px;
+}
+
+.mat-card {
+  padding-bottom: 60px;
+  margin-bottom: 25px;
+  
+}
+
+/* .mat-card-content {
+  display: inline-block;
+  white-space: nowrap;
+} */
+
+.row {
+  white-space: nowrap;
+  width: 150px;
+  display: inline-block;
+
+}
+
+.inline {
+  white-space: nowrap;
+  width: 150px;
+  display: inline-block;
+}
+
+/* unused */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -26,6 +71,22 @@
 
 .nav-action-container>li>button {
   margin-right: 9px;
+}
+
+.student-table {
+  width: 100%;
+  /* border: 1px solid #CCC; */
+  table-layout: fixed;
+}
+
+.table-one>tbody>tr>td {
+  border: 1px solid #CCC;
+  min-height: 50px;
+  padding: .5em;
+}
+
+td {
+  padding-bottom: 1em;
 }
 
 .search-form {
@@ -57,9 +118,62 @@
   text-decoration: none !important;
 }
 
+.mini-float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 120px;
+  right: 51px;
+  background-color: grey;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 10;
+  text-decoration: none !important;
+}
+
 .my-float {
   /* margin-top: 22px; */
   text-decoration: none !important;
+}
+
+.floating-edit-button {
+  padding-top: 10px;
+  border:none;
+  color: white;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+
+.mini-save-float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 120px;
+  right: 51px;
+  background-color: #004cff;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 10;
+  text-decoration: none !important;
+}
+
+.floating-save-button {
+  padding-top: 10px;
+  border:none;
+  color: white;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+
+.main-table-card {
+  width: 60%;
+  margin: auto;
 }
 
 .floating-plus-button {
