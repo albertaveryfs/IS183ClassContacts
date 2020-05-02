@@ -17,6 +17,8 @@ import { CartComponent } from './cart/cart.component';
 import { SharedServiceModule } from '../shared-service/shared-service.module';
 import { CoursesComponent } from './courses/courses.component';
 import { GroupsComponent } from './groups/groups.component';
+import { FilterPipe } from './courses/courses.component';
+
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { GroupsComponent } from './groups/groups.component';
     HomeComponent,
     CartComponent,
     CoursesComponent,
-    GroupsComponent
+    GroupsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

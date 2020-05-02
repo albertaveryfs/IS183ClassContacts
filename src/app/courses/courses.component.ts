@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
 import { HttpService } from '../../shared-service/http.service';
+import { Pipe, PipeTransform } from '@angular/core';
+import * as _ from 'lodash';
 
 
 export interface IBike {
@@ -12,6 +14,8 @@ export interface IBike {
   quantity: number;
   description: string;
 }
+
+
 
 
 @Component({
@@ -101,3 +105,15 @@ export class CoursesComponent implements OnInit {
 }
 
 
+@Pipe({
+  name: 'filterUnique',
+  pure: false
+})
+export class FilterPipe implements PipeTransform{
+  transform(value: any, args?: any): any{
+    let uniqueArray = value.filter(function (el, index, array) {
+      return array.indexOf (el) == index;
+    });
+    return uniqueArray;
+  }
+}
